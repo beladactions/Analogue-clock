@@ -1,0 +1,87 @@
+/* 
+    AUTHOR:     BELOVED ADEJUYIGBE
+    NICKNAME:   beladactions
+    PROJECT::   Analogue Clock
+
+*/
+
+
+body {
+
+    background-color: purple;
+}
+
+
+/*========
+CLOCK BODY
+==========
+*/
+
+
+#clock-cent {
+
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically */
+    height: 100vh; /* set a height for the parent container */
+}
+
+
+.clock {
+	
+    position: relative;
+	width: 200px;
+	height: 200px;
+	margin: 50px auto;
+	border-radius: 30%;
+	background-color: black;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/*
+====================
+    HAND POSITIONING
+=====================
+*/
+.hour-hand, .minute-hand, .second-hand {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform-origin: top center;
+}
+
+
+.hour-hand {
+	width: 6px;
+	height: 50px;
+	margin-left: -3px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.minute-hand {
+	width: 4px;
+	height: 80px;
+	margin-left: -2px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.second-hand {
+	width: 2px;
+	height: 90px;
+	margin-left: -1px;
+	background-color: red;
+	border-radius: 5px;
+}
+
+.center-circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: goldenrod;
+}
